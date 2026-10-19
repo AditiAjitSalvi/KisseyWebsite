@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="web_standard" name="shell-type" />
+  <title>Kissey | Real Stories From Every Human</title>
+  <meta
+    content="Discover the unique 'kissey' of every human in our captivating podcast channel. Join us as we delve into the personal stories and experiences of individuals from all walks of life. Get ready to be inspired, moved, and entertained with every episode of Kissey."
+    name="description" />
+  <meta content="Kissey | Real Stories From Every Human" property="og:title" />
+  <meta
+    content="Discover the unique 'kissey' of every human in our captivating podcast channel. Join us as we delve into the personal stories and experiences of individuals from all walks of life. Get ready to be inspired, moved, and entertained with every episode of Kissey."
+    property="og:description" />
+  <link rel="icon" type="image/jpeg" href="Assets/kissey.jpg" />
+  <style>
+    @layer base {
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 85px;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        max-width: 100vw;
+      }
+
+      main>:first-child {
+        margin-top: 0 !important;
+      }
+
+      main>:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    .doodle-bg {
+      background-color: #fdfdfd;
+      background-image: radial-gradient(#111111 0.75px, transparent 0.75px), radial-gradient(#111111 0.75px, #fdfdfd 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+      opacity: 0.97;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#111111",
+            "primary-container": "#FFDE0A",
+            "on-primary-container": "#111111",
+            "background": "#fdfdfd",
+            "surface": "#ffffff",
+            "surface-container": "#f4f4f6",
+            "surface-container-low": "#eeeeef",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#e4e4e7",
+            "surface-container-highest": "#d4d4d8",
+            "on-surface": "#111111",
+            "on-surface-variant": "#4b5563",
+            "outline": "#111111",
+            "outline-variant": "#d1d5db"
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            lg: "1rem",
+            xl: "1.5rem",
+            full: "9999px"
+          },
+          spacing: {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "margin": "2rem",
+            "gutter": "1.5rem"
+          },
+          fontFamily: {
+            "headline-xl": ["Outfit", "sans-serif"],
+            "headline-lg": ["Outfit", "sans-serif"],
+            "headline-md": ["Outfit", "sans-serif"],
+            "headline-sm": ["Outfit", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap"
+    rel="stylesheet" />
+</head>
+
+<body
+  class="bg-background font-body text-on-surface doodle-bg selection:bg-primary-container selection:text-on-primary-container">
+  <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b-2 border-primary">
+    <div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between">
+      <a class="font-headline-sm tracking-wider uppercase text-primary font-extrabold text-xl flex items-center gap-2"
+        data-path="home" href="#">
+        <span
+          class="bg-primary-container text-primary px-3 py-1 rounded-lg border-2 border-primary shadow-[2px_2px_0px_0px_#111]">Kissey</span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-space-lg font-bold">
+        <a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="about"
+          href="#what-is-kissey">About</a>
+        <a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="host"
+          href="#host">Host</a>
+        <a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="latest-talks"
+          href="#latest-talks">Latest Talks</a>
+        <a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="contact"
+          href="#contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2.5 sm:gap-4">
+        <a class="hidden sm:inline-flex bg-primary-container text-on-primary-container font-label-md px-4 sm:px-space-lg py-1.5 sm:py-space-sm rounded-full border-2 border-primary shadow-[3px_3px_0px_0px_#111] hover:translate-y-[-2px] transition-transform font-bold text-xs sm:text-sm"
+          data-path="subscribe" href="https://www.youtube.com/@Kisssey?sub_confirmation=1" rel="noopener"
+          target="_blank">Subscribe</a>
+        <img alt="Profile"
+          class="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover border-2 border-primary shadow-[2px_2px_0px_0px_#111]"
+          src="Assets/kissey.jpg" />
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-menu-btn" type="button" aria-label="Open Navigation Menu"
+          class="flex md:hidden w-10 h-10 rounded-xl bg-primary-container text-primary border-2 border-primary shadow-[2px_2px_0px_0px_#111] items-center justify-center hover:translate-y-[-2px] transition-all">
+          <span class="material-symbols-outlined font-black text-2xl">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer & Backdrop -->
+  <div id="mobile-drawer-backdrop"
+    class="fixed inset-0 bg-primary/60 backdrop-blur-sm z-[99] transition-opacity duration-300 opacity-0 pointer-events-none">
+  </div>
+
+  <aside id="mobile-drawer"
+    class="fixed top-0 right-0 h-full w-[85%] max-w-xs sm:max-w-sm bg-background border-l-3 border-primary shadow-[-10px_0px_0px_0px_#111] z-[100] transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between p-6 doodle-bg overflow-y-auto">
+    <!-- Drawer Header -->
+    <div>
+      <div class="flex items-center justify-between pb-5 border-b-2 border-primary">
+        <a href="#home"
+          class="mobile-nav-link font-headline-sm uppercase text-primary font-extrabold text-xl flex items-center gap-2">
+          <span
+            class="bg-primary-container text-primary px-3 py-1 rounded-lg border-2 border-primary shadow-[2px_2px_0px_0px_#111]">Kissey</span>
+        </a>
+        <button id="mobile-drawer-close" type="button" aria-label="Close Navigation Menu"
+          class="w-10 h-10 rounded-xl bg-white text-primary border-2 border-primary shadow-[2px_2px_0px_0px_#111] flex items-center justify-center hover:bg-yellow-50 hover:translate-y-[-2px] transition-all">
+          <span class="material-symbols-outlined font-bold text-2xl">close</span>
+        </button>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="flex flex-col gap-2.5 pt-5">
+        <a href="#home"
+          class="mobile-nav-link flex items-center gap-3 px-4 py-3 bg-white text-primary font-headline-sm font-extrabold rounded-2xl border-2 border-primary shadow-[3px_3px_0px_0px_#111] hover:bg-primary-container hover:translate-x-1 transition-all text-base">
+          <span class="material-symbols-outlined text-xl">home</span>
+          <span>Home</span>
+        </a>
+        <a href="#host"
+          class="mobile-nav-link flex items-center gap-3 px-4 py-3 bg-white text-primary font-headline-sm font-extrabold rounded-2xl border-2 border-primary shadow-[3px_3px_0px_0px_#111] hover:bg-primary-container hover:translate-x-1 transition-all text-base">
+          <span class="material-symbols-outlined text-xl">mic</span>
+          <span>Meet Host</span>
+        </a>
+        <a href="#what-is-kissey"
+          class="mobile-nav-link flex items-center gap-3 px-4 py-3 bg-white text-primary font-headline-sm font-extrabold rounded-2xl border-2 border-primary shadow-[3px_3px_0px_0px_#111] hover:bg-primary-container hover:translate-x-1 transition-all text-base">
+          <span class="material-symbols-outlined text-xl">help_outline</span>
+          <span>About (What is Kissey?)</span>
+        </a>
+        <a href="#latest-talks"
+          class="mobile-nav-link flex items-center gap-3 px-4 py-3 bg-white text-primary font-headline-sm font-extrabold rounded-2xl border-2 border-primary shadow-[3px_3px_0px_0px_#111] hover:bg-primary-container hover:translate-x-1 transition-all text-base">
+          <span class="material-symbols-outlined text-xl">podcasts</span>
+          <span>Latest Talks</span>
+        </a>
+        <a href="#contact"
+          class="mobile-nav-link flex items-center gap-3 px-4 py-3 bg-white text-primary font-headline-sm font-extrabold rounded-2xl border-2 border-primary shadow-[3px_3px_0px_0px_#111] hover:bg-primary-container hover:translate-x-1 transition-all text-base">
+          <span class="material-symbols-outlined text-xl">mail</span>
+          <span>Contact</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="pt-5 border-t-2 border-primary space-y-4">
+      <a href="https://www.youtube.com/@Kisssey?sub_confirmation=1" target="_blank" rel="noopener"
+        class="w-full bg-primary-container text-primary font-headline-sm font-black py-3 rounded-2xl border-2 border-primary shadow-[3px_3px_0px_0px_#111] flex items-center justify-center gap-2 hover:translate-y-[-2px] transition-all text-xs sm:text-sm uppercase tracking-wider">
+        <span class="material-symbols-outlined text-lg font-bold">notifications_active</span>
+        <span>Subscribe on YouTube</span>
+      </a>
+      <div class="flex items-center justify-center gap-3 pt-1">
+        <a href="https://www.youtube.com/@Kisssey" target="_blank" rel="noopener"
+          class="w-10 h-10 rounded-full bg-white border-2 border-primary shadow-[2px_2px_0px_0px_#111] flex items-center justify-center text-primary hover:bg-primary-container hover:translate-y-[-2px] transition-all">
+          <span class="material-symbols-outlined text-lg font-bold">smart_display</span>
+        </a>
+        <a href="https://open.spotify.com/show/1qIZ5hwxWoQKYJMnyuFFyb" target="_blank" rel="noopener"
+          class="w-10 h-10 rounded-full bg-white border-2 border-primary shadow-[2px_2px_0px_0px_#111] flex items-center justify-center text-primary hover:bg-primary-container hover:translate-y-[-2px] transition-all">
+          <span class="material-symbols-outlined text-lg font-bold">podcasts</span>
+        </a>
+        <a href="https://instagram.com/kissseyy" target="_blank" rel="noopener"
+          class="w-10 h-10 rounded-full bg-white border-2 border-primary shadow-[2px_2px_0px_0px_#111] flex items-center justify-center text-primary hover:bg-primary-container hover:translate-y-[-2px] transition-all">
+          <span class="material-symbols-outlined text-lg font-bold">photo_camera</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+  <main class="w-full pt-20">
+    <div class="flex flex-col w-full">
+      <!-- Hero Section -->
+      <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden px-gutter py-space-xl"
+        id="home">
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10">
+          <div class="lg:col-span-7 flex flex-col items-start space-y-space-lg">
+            <div
+              class="inline-flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-primary-container text-primary font-label-sm uppercase tracking-wider border-2 border-primary shadow-[2px_2px_0px_0px_#111]">
+              <span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+              148K+ Subscribers on YouTube
+            </div>
+            <h1 class="font-headline-xl text-5xl md:text-6xl text-primary font-black tracking-tight leading-tight">
+              Real Stories From <br /><span
+                class="bg-primary-container px-2 py-1 border-2 border-primary shadow-[4px_4px_0px_0px_#111] inline-block mt-2">Every
+                Human.</span>
+            </h1>
+            <p class="font-body-lg text-on-surface-variant max-w-xl text-lg font-medium">
+              Personal stories and experiences from individuals of all walks of life. Get ready to be inspired, moved,
+              and entertained.
+            </p>
+            <div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+              <a class="bg-primary-container text-primary font-label-md px-space-xl py-space-md rounded-full border-2 border-primary shadow-[4px_4px_0px_0px_#111] hover:translate-y-[-2px] transition-all flex items-center gap-space-sm font-bold text-base"
+                href="https://open.spotify.com/show/1qIZ5hwxWoQKYJMnyuFFyb" rel="noopener" target="_blank">
+                <span class="material-symbols-outlined font-bold"
+                  style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                Listen Now
+              </a>
+              <a class="bg-white text-primary font-label-md px-space-xl py-space-md rounded-full border-2 border-primary shadow-[4px_4px_0px_0px_#111] hover:translate-y-[-2px] transition-all font-bold text-base"
+                href="https://www.youtube.com/@Kisssey" rel="noopener" target="_blank">
+                Subscribe
+              </a>
+            </div>
+          </div>
+          <!-- Hero Right — Stage (Mobile-Optimized & Responsive) -->
+          <div class="lg:col-span-5 flex justify-center items-center w-full py-4 sm:py-0 overflow-visible">
+            <div
+              class="relative w-[340px] xs:w-[380px] sm:w-full sm:max-w-[480px] h-[520px] scale-[0.92] xs:scale-[0.98] sm:scale-100 origin-center select-none"
+              style="max-width:480px">
+
+              <!-- Dashed ring — inset:10px so it stays inside stage -->
+              <div
+                style="position:absolute;inset:10px;border:3px dashed #111;border-radius:50%;opacity:.22;animation:stageRing 40s linear infinite;pointer-events:none">
+              </div>
+
+              <!-- Yellow organic blob (wide & natural proportions) -->
+              <div
+                style="position:absolute;inset:35px 25px 45px 25px;background:#FFDE0A;border:3px solid #111;border-radius:46% 54% 50% 50%/55% 45% 55% 45%;box-shadow:10px 10px 0 #111">
+              </div>
+
+              <!-- Kissey Artwork -->
+              <div
+                style="position:absolute;left:50%;top:46%;width:58%;aspect-ratio:4/5;transform:translate(-50%,-50%) rotate(-3deg);background:#fff;border:3px solid #111;border-radius:22px;box-shadow:8px 8px 0 #111;overflow:hidden">
+                <img alt="Kissey — Podcast" src="Assets/kissey.jpg"
+                  style="width:100%;height:100%;object-fit:cover;object-position:center" loading="lazy" />
+              </div>
+
+              <!-- Sticker 1: 148K+ Subscribers (top-left) -->
+              <div
+                style="position:absolute;top:15px;left:0;animation:stickerFloat 3.2s ease-in-out infinite;z-index:10">
+                <div
+                  style="background:#fff;border:2px solid #111;border-radius:14px;box-shadow:4px 4px 0 #111;padding:8px 12px;display:flex;align-items:center;gap:8px;white-space:nowrap">
+                  <span
+                    style="width:26px;height:26px;border-radius:8px;background:#ff2d2d;display:grid;place-items:center;flex-shrink:0">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="white">
+                      <path
+                        d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z" />
+                    </svg>
+                  </span>
+                  <div>
+                    <div style="font-family:Outfit,sans-serif;font-weight:900;font-size:18px;line-height:1;color:#111">
+                      148K+</div>
+                    <div
+                      style="font-size:10px;font-weight:700;color:#4b5563;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">
+                      Subscribers</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sticker 2: 43.7M+ Total Views (top-right) -->
+              <div
+                style="position:absolute;top:55px;right:0;animation:stickerFloat 3.8s ease-in-out infinite;animation-delay:1s;z-index:10">
+                <div
+                  style="background:#fff;border:2px solid #111;border-radius:14px;box-shadow:4px 4px 0 #111;padding:8px 12px;display:flex;align-items:center;gap:8px;white-space:nowrap">
+                  <span class="material-symbols-outlined"
+                    style="font-size:24px;color:#111;font-variation-settings:'FILL' 1">visibility</span>
+                  <div>
+                    <div style="font-family:Outfit,sans-serif;font-weight:900;font-size:18px;line-height:1;color:#111">
+                      43.7M+</div>
+                    <div
+                      style="font-size:10px;font-weight:700;color:#4b5563;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">
+                      Total Views</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sticker 3: 745+ Episodes (mid-left) -->
+              <div
+                style="position:absolute;bottom:155px;left:0;animation:stickerFloat 4.1s ease-in-out infinite;animation-delay:2s;z-index:10">
+                <div
+                  style="background:#fff;border:2px solid #111;border-radius:14px;box-shadow:4px 4px 0 #111;padding:8px 12px;display:flex;align-items:center;gap:8px;white-space:nowrap">
+                  <span
+                    style="width:26px;height:26px;border-radius:8px;background:#1db954;display:grid;place-items:center;flex-shrink:0">
+                    <span class="material-symbols-outlined"
+                      style="font-size:15px;color:#fff;font-variation-settings:'FILL' 1">podcasts</span>
+                  </span>
+                  <div>
+                    <div style="font-family:Outfit,sans-serif;font-weight:900;font-size:18px;line-height:1;color:#111">
+                      745+</div>
+                    <div
+                      style="font-size:10px;font-weight:700;color:#4b5563;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">
+                      Episodes</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sticker 4: 90K+ Instagram Followers (mid-right - positioned safely above player) -->
+              <div
+                style="position:absolute;bottom:85px;right:0;animation:stickerFloat 3.5s ease-in-out infinite;animation-delay:.5s;z-index:10">
+                <div
+                  style="background:#fff;border:2px solid #111;border-radius:14px;box-shadow:4px 4px 0 #111;padding:8px 12px;display:flex;align-items:center;gap:8px;white-space:nowrap">
+                  <span
+                    style="width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,#f9ce34,#ee2a7b,#6228d7);display:grid;place-items:center;flex-shrink:0">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="white">
+                      <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                  </span>
+                  <div>
+                    <div style="font-family:Outfit,sans-serif;font-weight:900;font-size:18px;line-height:1;color:#111">
+                      90K+</div>
+                    <div
+                      style="font-size:10px;font-weight:700;color:#4b5563;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">
+                      Instagram</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mini Audio Player (at bottom, with clear space above it) -->
+              <div
+                style="position:absolute;left:50%;bottom:4px;transform:translateX(-50%);width:88%;background:#fff;border:2px solid #111;border-radius:18px;box-shadow:4px 4px 0 #111;padding:10px 14px;display:flex;align-items:center;gap:12px;z-index:20">
+                <a href="https://open.spotify.com/show/1qIZ5hwxWoQKYJMnyuFFyb" rel="noopener" target="_blank"
+                  style="width:38px;height:38px;border-radius:50%;background:#FFDE0A;border:2px solid #111;display:grid;place-items:center;flex-shrink:0;text-decoration:none;transition:transform .2s"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                  <span class="material-symbols-outlined"
+                    style="font-size:20px;color:#111;font-variation-settings:'FILL' 1">play_arrow</span>
+                </a>
+                <div style="flex:1;min-width:0">
+                  <div style="font-family:Outfit,sans-serif;font-weight:900;font-size:14px;color:#111;line-height:1">
+                    Kissey</div>
+                  <div style="font-size:11px;font-weight:600;color:#4b5563;margin-top:2px">Now Playing</div>
+                </div>
+                <!-- Equalizer bars -->
+                <div style="display:flex;gap:3px;align-items:center;height:24px">
+                  <i
+                    style="width:3px;background:#111;border-radius:3px;animation:heroEq 0.8s ease-in-out infinite;display:block"></i>
+                  <i
+                    style="width:3px;background:#111;border-radius:3px;animation:heroEq 0.9s ease-in-out infinite;animation-delay:.15s;display:block"></i>
+                  <i
+                    style="width:3px;background:#111;border-radius:3px;animation:heroEq 0.7s ease-in-out infinite;animation-delay:.3s;display:block"></i>
+                  <i
+                    style="width:3px;background:#111;border-radius:3px;animation:heroEq 1.0s ease-in-out infinite;animation-delay:.1s;display:block"></i>
+                  <i
+                    style="width:3px;background:#111;border-radius:3px;animation:heroEq 0.8s ease-in-out infinite;animation-delay:.45s;display:block"></i>
+                  <i
+                    style="width:3px;background:#111;border-radius:3px;animation:heroEq 0.9s ease-in-out infinite;animation-delay:.25s;display:block"></i>
+                  <i
+                    style="width:3px;background:#111;border-radius:3px;animation:heroEq 0.75s ease-in-out infinite;animation-delay:.6s;display:block"></i>
+                  <i
+                    style="width:3px;background:#111;border-radius:3px;animation:heroEq 1.0s ease-in-out infinite;animation-delay:.35s;display:block"></i>
+                </div>
+              </div>
+
+              <style>
+                @keyframes stageRing {
+                  to {
+                    transform: rotate(360deg);
+                  }
+                }
+
+                @keyframes stickerFloat {
+
+                  0%,
+                  100% {
+                    transform: translateY(0)
+                  }
+
+                  50% {
+                    transform: translateY(-8px)
+                  }
+                }
+
+                @keyframes heroEq {
+
+                  0%,
+                  100% {
+                    height: 20%
+                  }
+
+                  50% {
+                    height: 100%
+                  }
+                }
+              </style>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- Host Section -->
+      <section class="py-space-xl px-gutter bg-background border-t-2 border-primary relative" id="host">
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="bg-primary-container rounded-3xl p-6 sm:p-10 lg:p-space-xl border-3 border-primary shadow-[8px_8px_0px_0px_#111] grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-space-xl items-center relative">
+            <div class="lg:col-span-5 flex justify-center">
+              <div class="relative w-full max-w-sm sm:max-w-md mx-auto">
+                <div
+                  class="relative w-full aspect-[4/5] rounded-3xl border-3 border-primary shadow-[10px_10px_0px_0px_#111] rotate-2 hover:rotate-0 hover:translate-y-[-4px] hover:shadow-[14px_14px_0px_0px_#111] transition-all duration-300 bg-white">
+                  <div
+                    class="absolute -top-4 -left-3 z-20 bg-white text-primary px-3.5 py-1.5 rounded-full border-2 border-primary shadow-[3px_3px_0px_0px_#111] flex items-center gap-1.5 font-black text-xs uppercase tracking-wider -rotate-2">
+                    <span class="material-symbols-outlined text-base font-bold text-primary">mic</span>
+                    <span>YOUR HOST</span>
+                  </div>
+                  <div class="w-full h-full overflow-hidden rounded-[21px]">
+                    <!-- Host photo of Dishank Timble -->
+                    <img alt="Dishank Timble - Host Portrait" class="w-full h-full object-cover object-[50%_25%]"
+                      src="Assets/dishank.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left space-y-space-md">
+              <span
+                class="font-label-sm uppercase font-extrabold bg-white px-3.5 py-1 rounded-full border-2 border-primary text-primary tracking-widest inline-flex items-center gap-1.5 shadow-[2px_2px_0px_0px_#111] text-xs">
+                Meet Your Host
+              </span>
+              <h2
+                class="font-headline-xl text-5xl sm:text-6xl md:text-7xl text-primary font-black tracking-tight leading-tight flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
+                <span
+                  class="relative inline-block bg-white px-3 sm:px-4 py-0.5 rounded-2xl border-3 border-primary shadow-[4px_4px_0px_0px_#111] -rotate-1">
+                  <span class="relative z-10">Dishank</span>
+                  <span class="absolute inset-x-2 bottom-1.5 h-4 bg-primary-container -z-0"></span>
+                </span>
+                <span>Timble</span>
+              </h2>
+              <p class="font-headline-sm text-lg sm:text-xl font-extrabold text-primary">
+                Filmmaker &amp; Host of Kissey Podcast
+              </p>
+              <p class="font-body-md text-primary font-medium text-base sm:text-lg leading-relaxed max-w-2xl">
+                Dishank Timble is a Mumbai-based filmmaker and the host of the Kissey Podcast. With a background in mass
+                media and professional cinematography, he uses his visual and conversational expertise to bring deep,
+                taboo-breaking dialogues to light. His purpose is simple: to bridge the gap between ancient wisdom and
+                modern realities, providing Gen-Z and millennial audiences with an authentic space to explore the
+                complex layers of human life.
+              </p>
+              <div class="grid grid-cols-3 gap-2 sm:gap-4 w-full max-w-xl pt-space-xs">
+                <div
+                  class="bg-white px-2 py-2.5 sm:p-4 rounded-2xl border-2 border-primary shadow-[3px_3px_0px_0px_#111] text-center hover:translate-y-[-2px] hover:shadow-[5px_5px_0px_0px_#111] transition-all">
+                  <span
+                    class="block font-headline-xl text-lg sm:text-2xl md:text-3xl font-black text-primary">148K+</span>
+                  <span
+                    class="block font-label-sm text-[9px] xs:text-[10.5px] sm:text-xs md:text-sm font-extrabold text-on-surface-variant uppercase tracking-normal sm:tracking-wider mt-0.5">Subscribers</span>
+                </div>
+                <div
+                  class="bg-white px-2 py-2.5 sm:p-4 rounded-2xl border-2 border-primary shadow-[3px_3px_0px_0px_#111] text-center hover:translate-y-[-2px] hover:shadow-[5px_5px_0px_0px_#111] transition-all">
+                  <span
+                    class="block font-headline-xl text-lg sm:text-2xl md:text-3xl font-black text-primary">745+</span>
+                  <span
+                    class="block font-label-sm text-[9px] xs:text-[10.5px] sm:text-xs md:text-sm font-extrabold text-on-surface-variant uppercase tracking-normal sm:tracking-wider mt-0.5">Videos</span>
+                </div>
+                <div
+                  class="bg-white px-2 py-2.5 sm:p-4 rounded-2xl border-2 border-primary shadow-[3px_3px_0px_0px_#111] text-center hover:translate-y-[-2px] hover:shadow-[5px_5px_0px_0px_#111] transition-all">
+                  <span
+                    class="block font-headline-xl text-lg sm:text-2xl md:text-3xl font-black text-primary">43.7M+</span>
+                  <span
+                    class="block font-label-sm text-[9px] xs:text-[10.5px] sm:text-xs md:text-sm font-extrabold text-on-surface-variant uppercase tracking-normal sm:tracking-wider mt-0.5">Views</span>
+                </div>
+              </div>
+              <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-space-xs">
+                <div
+                  class="flex items-center gap-2 bg-white px-3.5 py-2 rounded-xl border-2 border-primary shadow-[2px_2px_0px_0px_#111] hover:translate-y-[-2px] transition-transform">
+                  <span class="material-symbols-outlined text-primary font-bold text-lg">location_on</span>
+                  <span class="font-body-sm text-primary font-bold">Mumbai, India</span>
+                </div>
+                <div
+                  class="flex items-center gap-2 bg-white px-3.5 py-2 rounded-xl border-2 border-primary shadow-[2px_2px_0px_0px_#111] hover:translate-y-[-2px] transition-transform">
+                  <span class="material-symbols-outlined text-primary font-bold text-lg">movie</span>
+                  <span class="font-body-sm text-primary font-bold">Filmmaker &amp; Cinematographer</span>
+                </div>
+              </div>
+              <div
+                class="bg-white p-4 sm:p-5 rounded-2xl border-2 border-primary shadow-[4px_4px_0px_0px_#111] w-full max-w-xl flex items-center justify-center lg:justify-start gap-3 hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_#111] transition-all">
+                <span
+                  class="material-symbols-outlined text-3xl text-primary font-bold select-none shrink-0">format_quote</span>
+                <p class="font-headline-sm text-base sm:text-lg font-bold text-primary italic">“Everyone has a unique
+                  Kissey.” <span class="not-italic font-extrabold text-sm ml-1">— Dishank Timble</span></p>
+              </div>
+              <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-space-xs">
+                <a class="bg-white text-primary font-label-md px-4 sm:px-5 py-2.5 rounded-full border-2 border-primary shadow-[4px_4px_0px_0px_#111] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_#111] transition-all flex items-center gap-2 font-black text-sm"
+                  href="https://www.instagram.com/dishanktimble/" rel="noopener" target="_blank">
+                  <span class="material-symbols-outlined text-xl font-bold">photo_camera</span>
+                  <span>Instagram</span>
+                </a>
+                <a class="bg-white text-primary font-label-md px-4 sm:px-5 py-2.5 rounded-full border-2 border-primary shadow-[4px_4px_0px_0px_#111] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_#111] transition-all flex items-center gap-2 font-black text-sm"
+                  href="https://www.youtube.com/@DishankTimbleUnplugged" rel="noopener" target="_blank">
+                  <span class="material-symbols-outlined text-xl font-bold">smart_display</span>
+                  <span>YouTube</span>
+                </a>
+                <a class="bg-white text-primary font-label-md px-4 sm:px-5 py-2.5 rounded-full border-2 border-primary shadow-[4px_4px_0px_0px_#111] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_#111] transition-all flex items-center gap-2 font-black text-sm"
+                  href="https://www.linkedin.com/in/dishank-timble-3b491711b/" rel="noopener" target="_blank">
+                  <svg class="w-4 h-4 fill-primary" viewBox="0 0 24 24">
+                    <path
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 0 0 1.66-1.63 1.65 1.65 0 0 0-1.66-1.65c-.92 0-1.66.74-1.66 1.65 0 .91.74 1.63 1.66 1.63m1.4 9.74v-8.37H5.06v8.37h2.8z" />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a class="bg-white text-primary font-label-md px-4 sm:px-5 py-2.5 rounded-full border-2 border-primary shadow-[4px_4px_0px_0px_#111] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_#111] transition-all flex items-center gap-2 font-black text-sm"
+                  href="https://open.spotify.com/show/1qIZ5hwxWoQKYJMnyuFFyb" rel="noopener" target="_blank">
+                  <span class="material-symbols-outlined text-xl font-bold">podcasts</span>
+                  <span>Spotify</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- What is Kissey Section -->
+      <section class="py-space-xl px-gutter bg-background border-t-2 border-primary relative" id="what-is-kissey">
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="bg-white rounded-3xl p-6 sm:p-10 lg:p-space-xl border-3 border-primary shadow-[8px_8px_0px_0px_#111]">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-space-xl items-center">
+              <!-- Text Content -->
+              <div class="lg:col-span-7 space-y-space-md">
+                <span
+                  class="font-label-sm uppercase font-extrabold bg-primary-container px-3 py-1 rounded-full border border-primary text-primary tracking-widest inline-block">The
+                  Story Behind</span>
+                <h2 class="font-headline-lg text-4xl text-primary font-black">What is Kissey?</h2>
+                <p class="font-body-md text-on-surface-variant font-medium text-base sm:text-lg leading-relaxed">
+                  Discover the unique 'kissey' of every human in our captivating podcast channel. Join us as we delve
+                  into
+                  the personal stories and experiences of individuals from all walks of life. Get ready to be inspired,
+                  moved, and entertained with every episode of Kissey.
+                </p>
+                <p class="font-body-md text-on-surface-variant font-medium text-base sm:text-lg leading-relaxed">
+                  Created in India, Kissey celebrates real stories, diverse voices, and authentic human experiences.
+                  Catch
+                  the latest video episodes on YouTube or stream the podcast on Spotify.
+                </p>
+                <div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+                  <a class="bg-primary-container text-primary font-label-md px-space-lg py-space-sm rounded-full border-2 border-primary shadow-[3px_3px_0px_0px_#111] hover:translate-y-[-2px] hover:shadow-[5px_5px_0px_0px_#111] transition-all flex items-center gap-2 font-bold text-sm sm:text-base"
+                    href="https://www.youtube.com/@Kisssey" rel="noopener" target="_blank">
+                    <span class="material-symbols-outlined text-xl font-bold">smart_display</span>
+                    Watch on YouTube
+                  </a>
+                  <a class="bg-white text-primary font-label-md px-space-lg py-space-sm rounded-full border-2 border-primary shadow-[3px_3px_0px_0px_#111] hover:translate-y-[-2px] hover:shadow-[5px_5px_0px_0px_#111] transition-all flex items-center gap-2 font-bold text-sm sm:text-base"
+                    href="https://open.spotify.com/show/1qIZ5hwxWoQKYJMnyuFFyb" rel="noopener" target="_blank">
+                    <span class="material-symbols-outlined text-xl font-bold">podcasts</span>
+                    Listen on Spotify
+                  </a>
+                </div>
+              </div>
+              <!-- Screen Image -->
+              <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-xs sm:max-w-sm">
+                  <!-- Decorative offset block -->
+                  <div
+                    class="absolute inset-0 rounded-3xl bg-primary-container border-3 border-primary translate-x-3 translate-y-3 -z-0">
+                  </div>
+                  <div
+                    class="relative z-10 rounded-3xl overflow-hidden border-3 border-primary shadow-[6px_6px_0px_0px_#111] hover:shadow-[10px_10px_0px_0px_#111] hover:translate-y-[-4px] transition-all duration-300 bg-white">
+                    <img src="Assets/screen.png" alt="Kissey Podcast App Screenshot"
+                      class="w-full h-full object-cover block" loading="lazy" />
+                  </div>
+                  <!-- Floating badge -->
+                  <div
+                    class="absolute -bottom-4 -right-4 z-20 bg-primary-container text-primary px-3 py-1.5 rounded-xl border-2 border-primary shadow-[3px_3px_0px_0px_#111] flex items-center gap-1.5 font-black text-xs uppercase tracking-wider">
+                    <span class="material-symbols-outlined text-base font-bold">verified</span>
+                    <span>Real Stories</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section class="py-space-xl px-gutter bg-white relative border-y-2 border-primary" id="about">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+          <div class="lg:col-span-6 space-y-space-md">
+            <span
+              class="font-label-sm uppercase font-extrabold bg-primary-container px-3 py-1 rounded-full border border-primary text-primary tracking-widest inline-block">Our
+              Mission &amp; Culture</span>
+            <h2 class="font-headline-lg text-4xl text-primary font-black">Real Stories From Every Human</h2>
+            <p class="font-body-md text-on-surface-variant font-medium text-base">
+              Discover the unique 'kissey' of every human in our captivating podcast channel. Join us as we delve into
+              the personal stories and experiences of individuals from all walks of life.
+            </p>
+            <p class="font-body-md text-on-surface-variant font-medium text-base">
+              Get ready to be inspired, moved, and entertained with every episode of Kissey. Every conversation brings
+              forth heartfelt journeys and genuine perspectives that connect us all.
+            </p>
+          </div>
+          <div class="lg:col-span-6 grid grid-cols-2 gap-space-md">
+            <div
+              class="bg-surface-container p-space-lg rounded-2xl border-2 border-primary shadow-[4px_4px_0px_0px_#111] flex flex-col justify-between bg-yellow-50/30">
+              <span class="text-headline-lg text-primary font-headline-xl text-4xl font-black">148K+</span>
+              <span class="font-label-md text-on-surface uppercase tracking-wide pt-space-sm font-bold">YouTube
+                Subscribers</span>
+            </div>
+            <div
+              class="bg-surface-container p-space-lg rounded-2xl border-2 border-primary shadow-[4px_4px_0px_0px_#111] flex flex-col justify-between bg-yellow-50/30">
+              <span class="text-headline-lg text-primary font-headline-xl text-4xl font-black">745+</span>
+              <span class="font-label-md text-on-surface uppercase tracking-wide pt-space-sm font-bold">Videos</span>
+            </div>
+            <div
+              class="bg-surface-container p-space-lg rounded-2xl border-2 border-primary shadow-[4px_4px_0px_0px_#111] flex flex-col justify-between bg-yellow-50/30">
+              <span class="text-headline-lg text-primary font-headline-xl text-4xl font-black">43.7M+</span>
+              <span class="font-label-md text-on-surface uppercase tracking-wide pt-space-sm font-bold">Total
+                Views</span>
+            </div>
+            <div
+              class="bg-surface-container p-space-lg rounded-2xl border-2 border-primary shadow-[4px_4px_0px_0px_#111] flex flex-col justify-between bg-yellow-50/30">
+              <span class="text-headline-lg text-primary font-headline-xl text-4xl font-black">2022</span>
+              <span class="font-label-md text-on-surface uppercase tracking-wide pt-space-sm font-bold">Since (Joined
+                July 2022)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Latest Talks / Episodes Section -->
+      <section class="py-space-xl px-gutter bg-white border-t-2 border-primary" id="latest-talks">
+        <div class="max-w-7xl mx-auto space-y-space-xl">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+            <div>
+              <span
+                class="font-label-sm uppercase font-extrabold bg-primary-container px-3 py-1 rounded-full border border-primary text-primary tracking-widest inline-block">Fresh
+                Audio &amp; Video</span>
+              <h2 class="font-headline-lg text-4xl text-primary font-black pt-space-xs">Latest Talks &amp; Episodes</h2>
+            </div>
+            <!-- Filter Tabs -->
+            <div class="flex items-center gap-2 overflow-x-auto pb-1" id="talks-filter">
+              <button onclick="filterTalks('all', this)"
+                class="filter-tab px-4 py-2 rounded-full bg-primary-container text-primary font-label-md border-2 border-primary font-extrabold shadow-[2px_2px_0px_0px_#111] hover:translate-y-[-2px] transition-all text-xs sm:text-sm">
+                All (8)
+              </button>
+              <button onclick="filterTalks('youtube', this)"
+                class="filter-tab px-4 py-2 rounded-full bg-white text-on-surface-variant hover:text-primary font-label-md border-2 border-primary font-extrabold hover:bg-yellow-50 hover:translate-y-[-2px] transition-all text-xs sm:text-sm">
+                YouTube (4)
+              </button>
+              <button onclick="filterTalks('spotify', this)"
+                class="filter-tab px-4 py-2 rounded-full bg-white text-on-surface-variant hover:text-primary font-label-md border-2 border-primary font-extrabold hover:bg-yellow-50 hover:translate-y-[-2px] transition-all text-xs sm:text-sm">
+                Spotify (4)
+              </button>
+            </div>
+          </div>
+
+          <!-- Episodes Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="episodes-grid">
+            <!-- YouTube Card 1 -->
+            <div
+              class="episode-card bg-white rounded-2xl overflow-hidden border-2 border-primary shadow-[5px_5px_0px_0px_#111] hover:translate-y-[-4px] hover:shadow-[8px_8px_0px_0px_#111] transition-all duration-300 flex flex-col group"
+              data-category="youtube">
+              <div class="relative aspect-[16/9] overflow-hidden border-b-2 border-primary bg-primary/5">
+                <img alt="LEARN SHATKARMA KALI TANTRA FREE?"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://i.ytimg.com/vi/y88lPEmzlx8/hqdefault.jpg" loading="lazy" />
+                <div
+                  class="absolute inset-0 bg-primary/25 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <a class="w-12 h-12 rounded-full bg-primary-container text-primary border-2 border-primary shadow-[2px_2px_0px_0px_#111] flex items-center justify-center hover:scale-110 transition-transform"
+                    href="https://youtu.be/y88lPEmzlx8?si=4hhBiS-TuHEXXxfK" rel="noopener" target="_blank"
+                    title="Watch on YouTube">
+                    <span class="material-symbols-outlined text-2xl font-bold"
+                      style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                  </a>
+                </div>
+                <span
+                  class="absolute top-3 left-3 bg-primary-container text-primary font-extrabold px-2.5 py-0.5 rounded-full text-[11px] border border-primary shadow-[2px_2px_0px_0px_#111] flex items-center gap-1">
+                  <span class="material-symbols-outlined text-xs font-bold">smart_display</span> YouTube
+                </span>
+              </div>
+              <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                <div>
+                  <h3
+                    class="font-headline-sm text-primary group-hover:text-amber-600 transition-colors font-extrabold text-sm sm:text-base leading-snug line-clamp-2"
+                    title="LEARN SHATKARMA KALI TANTRA FREE? Heera Dabolkar on Spirituality &amp; Real-Life story | kissey podcast">
+                    LEARN SHATKARMA KALI TANTRA FREE? Heera Dabolkar on Spirituality &amp; Real-Life Story
+                  </h3>
+                </div>
+                <div class="pt-3 border-t-2 border-dashed border-outline-variant">
+                  <a class="text-primary font-label-md flex items-center justify-center gap-1.5 hover:translate-y-[-2px] transition-all font-bold bg-primary-container px-3 py-2 rounded-xl border border-primary shadow-[2px_2px_0px_0px_#111] w-full text-xs"
+                    href="https://youtu.be/y88lPEmzlx8?si=4hhBiS-TuHEXXxfK" rel="noopener" target="_blank">
+                    <span>Watch on YouTube</span>
+                    <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- YouTube Card 2 -->
+            <div
+              class="episode-card bg-white rounded-2xl overflow-hidden border-2 border-primary shadow-[5px_5px_0px_0px_#111] hover:translate-y-[-4px] hover:shadow-[8px_8px_0px_0px_#111] transition-all duration-300 flex flex-col group"
+              data-category="youtube">
+              <div class="relative aspect-[16/9] overflow-hidden border-b-2 border-primary bg-primary/5">
+                <img alt="CURSED OBJECTS That Should NEVER Be Touched!"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://i.ytimg.com/vi/C5L7lsQ0wG4/hqdefault.jpg" loading="lazy" />
+                <div
+                  class="absolute inset-0 bg-primary/25 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <a class="w-12 h-12 rounded-full bg-primary-container text-primary border-2 border-primary shadow-[2px_2px_0px_0px_#111] flex items-center justify-center hover:scale-110 transition-transform"
+                    href="https://youtu.be/C5L7lsQ0wG4?si=eMfywKuMkKdR1ecP" rel="noopener" target="_blank"
+                    title="Watch on YouTube">
+                    <span class="material-symbols-outlined text-2xl font-bold"
+                      style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                  </a>
+                </div>
+                <span
+                  class="absolute top-3 left-3 bg-primary-container text-primary font-extrabold px-2.5 py-0.5 rounded-full text-[11px] border border-primary shadow-[2px_2px_0px_0px_#111] flex items-center gap-1">
+                  <span class="material-symbols-outlined text-xs font-bold">smart_display</span> YouTube
+                </span>
+              </div>
+              <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                <div>
+                  <h3
+                    class="font-headline-sm text-primary group-hover:text-amber-600 transition-colors font-extrabold text-sm sm:text-base leading-snug line-clamp-2"
+                    title="CURSED OBJECTS That Should NEVER Be Touched! ft. Savio Furtado| kissey podcast">
+                    CURSED OBJECTS That Should NEVER Be Touched! ft. Savio Furtado
+                  </h3>
+                </div>
+                <div class="pt-3 border-t-2 border-dashed border-outline-variant">
+                  <a class="text-primary font-label-md flex items-center justify-center gap-1.5 hover:translate-y-[-2px] transition-all font-bold bg-primary-container px-3 py-2 rounded-xl border border-primary shadow-[2px_2px_0px_0px_#111] w-full text-xs"
+                    href="https://youtu.be/C5L7lsQ0wG4?si=eMfywKuMkKdR1ecP" rel="noopener" target="_blank">
+                    <span>Watch on YouTube</span>
+                    <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- YouTube Card 3 -->
+            <div
+              class="episode-card bg-white rounded-2xl overflow-hidden border-2 border-primary shadow-[5px_5px_0px_0px_#111] hover:translate-y-[-4px] hover:shadow-[8px_8px_0px_0px_#111] transition-all duration-300 flex flex-col group"
+              data-category="youtube">
+              <div class="relative aspect-[16/9] overflow-hidden border-b-2 border-primary bg-primary/5">
+                <img alt="BF wants To Sell My Ovaries For Money"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://i.ytimg.com/vi/PasJyIXaLok/hqdefault.jpg" loading="lazy" />
+                <div
+                  class="absolute inset-0 bg-primary/25 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <a class="w-12 h-12 rounded-full bg-primary-container text-primary border-2 border-primary shadow-[2px_2px_0px_0px_#111] flex items-center justify-center hover:scale-110 transition-transform"
+                    href="https://youtu.be/PasJyIXaLok?si=cVP6RBTKRibYgcGz" rel="noopener" target="_blank"
+                    title="Watch on YouTube">
+                    <span class="material-symbols-outlined text-2xl font-bold"
+                      style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                  </a>
+                </div>
+                <span
+                  class="absolute top-3 left-3 bg-primary-container text-primary font-extrabold px-2.5 py-0.5 rounded-full text-[11px] border border-primary shadow-[2px_2px_0px_0px_#111] flex items-center gap-1">
+                  <span class="material-symbols-outlined text-xs font-bold">smart_display</span> YouTube
+                </span>
+              </div>
+              <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                <div>
+                  <h3
+                    class="font-headline-sm text-primary group-hover:text-amber-600 transition-colors font-extrabold text-sm sm:text-base leading-snug line-clamp-2"
+                    title="BF wants To Sell My Ovaries For Money: The Truth About My Toxic Ex | kissey podcast | Dishank timble">
+                    BF Wants To Sell My Ovaries For Money: Truth About My Toxic Ex
+                  </h3>
+                </div>
+                <div class="pt-3 border-t-2 border-dashed border-outline-variant">
+                  <a class="text-primary font-label-md flex items-center justify-center gap-1.5 hover:translate-y-[-2px] transition-all font-bold bg-primary-container px-3 py-2 rounded-xl border border-primary shadow-[2px_2px_0px_0px_#111] w-full text-xs"
+                    href="https://youtu.be/PasJyIXaLok?si=cVP6RBTKRibYgcGz" rel="noopener" target="_blank">
+                    <span>Watch on YouTube</span>
+                    <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- YouTube Card 4 -->
+            <div
+              class="episode-card bg-white rounded-2xl overflow-hidden border-2 border-primary shadow-[5px_5px_0px_0px_#111] hover:translate-y-[-4px] hover:shadow-[8px_8px_0px_0px_#111] transition-all duration-300 flex flex-col group"
+              data-category="youtube">
+              <div class="relative aspect-[16/9] overflow-hidden border-b-2 border-primary bg-primary/5">
+                <img alt="She cheated with 50 men"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://i.ytimg.com/vi/KujFrVfp5hY/hqdefault.jpg" loading="lazy" />
+                <div
+                  class="absolute inset-0 bg-primary/25 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <a class="w-12 h-12 rounded-full bg-primary-container text-primary border-2 border-primary shadow-[2px_2px_0px_0px_#111] flex items-center justify-center hover:scale-110 transition-transform"
+                    href="https://youtu.be/KujFrVfp5hY?si=ZlIuE0my4YMGNUJ5" rel="noopener" target="_blank"
+                    title="Watch on YouTube">
+                    <span class="material-symbols-outlined text-2xl font-bold"
+                      style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                  </a>
+                </div>
+                <span
+                  class="absolute top-3 left-3 bg-primary-container text-primary font-extrabold px-2.5 py-0.5 rounded-full text-[11px] border border-primary shadow-[2px_2px_0px_0px_#111] flex items-center gap-1">
+                  <span class="material-symbols-outlined text-xs font-bold">smart_display</span> YouTube
+                </span>
+              </div>
+              <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                <div>
+                  <h3
+                    class="font-headline-sm text-primary group-hover:text-amber-600 transition-colors font-extrabold text-sm sm:text-base leading-snug line-clamp-2"
+                    title="She cheated with 50 men, Breaking up the family patterns | kissey podcast | Nimai Mheta">
+                    She Cheated with 50 Men, Breaking Up the Family Patterns
+                  </h3>
+                </div>
+                <div class="pt-3 border-t-2 border-dashed border-outline-variant">
+                  <a class="text-primary font-label-md flex items-center justify-center gap-1.5 hover:translate-y-[-2px] transition-all font-bold bg-primary-container px-3 py-2 rounded-xl border border-primary shadow-[2px_2px_0px_0px_#111] w-full text-xs"
+                    href="https://youtu.be/KujFrVfp5hY?si=ZlIuE0my4YMGNUJ5" rel="noopener" target="_blank">
+                    <span>Watch on YouTube</span>
+                    <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Spotify Card 1 -->
+            <div
+              class="episode-card bg-white rounded-2xl overflow-hidden border-2 border-primary shadow-[5px_5px_0px_0px_#111] hover:translate-y-[-4px] hover:shadow-[8px_8px_0px_0px_#111] transition-all duration-300 flex flex-col group"
+              data-category="spotify">
+              <div class="relative aspect-[16/9] overflow-hidden border-b-2 border-primary bg-primary/5">
+                <img alt="GHOST Caught on Camera?"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be4056fa940c9f0cb32e1bda37"
+                  loading="lazy" />
+                <div
+                  class="absolute inset-0 bg-primary/25 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <a class="w-12 h-12 rounded-full bg-primary-container text-primary border-2 border-primary shadow-[2px_2px_0px_0px_#111] flex items-center justify-center hover:scale-110 transition-transform"
+                    href="https://open.spotify.com/episode/531lPfEdN5wSYGFJAnpMnz?si=8638185707e24662" rel="noopener"
+                    target="_blank" title="Listen on Spotify">
+                    <span class="material-symbols-outlined text-2xl font-bold"
+                      style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                  </a>
+                </div>
+                <span
+                  class="absolute top-3 left-3 bg-white text-primary font-extrabold px-2.5 py-0.5 rounded-full text-[11px] border border-primary shadow-[2px_2px_0px_0px_#111] flex items-center gap-1">
+                  <span class="material-symbols-outlined text-xs font-bold">podcasts</span> Spotify
+                </span>
+              </div>
+              <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                <div>
+                  <h3
+                    class="font-headline-sm text-primary group-hover:text-amber-600 transition-colors font-extrabold text-sm sm:text-base leading-snug line-clamp-2"
+                    title="GHOST Caught on Camera? ft. Savio Furtado| kissey podcast">
+                    GHOST Caught on Camera? ft. Savio Furtado | Kissey Podcast
+                  </h3>
+                </div>
+                <div class="pt-3 border-t-2 border-dashed border-outline-variant">
+                  <a class="text-primary font-label-md flex items-center justify-center gap-1.5 hover:translate-y-[-2px] transition-all font-bold bg-white hover:bg-yellow-50 px-3 py-2 rounded-xl border border-primary shadow-[2px_2px_0px_0px_#111] w-full text-xs"
+                    href="https://open.spotify.com/episode/531lPfEdN5wSYGFJAnpMnz?si=8638185707e24662" rel="noopener"
+                    target="_blank">
+                    <span>Listen on Spotify</span>
+                    <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Spotify Card 2 -->
+            <div
+              class="episode-card bg-white rounded-2xl overflow-hidden border-2 border-primary shadow-[5px_5px_0px_0px_#111] hover:translate-y-[-4px] hover:shadow-[8px_8px_0px_0px_#111] transition-all duration-300 flex flex-col group"
+              data-category="spotify">
+              <div class="relative aspect-[16/9] overflow-hidden border-b-2 border-primary bg-primary/5">
+                <img alt="BF wants To Sell My Ovaries For Money"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be2d462e50cdf812e0908c812c"
+                  loading="lazy" />
+                <div
+                  class="absolute inset-0 bg-primary/25 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <a class="w-12 h-12 rounded-full bg-primary-container text-primary border-2 border-primary shadow-[2px_2px_0px_0px_#111] flex items-center justify-center hover:scale-110 transition-transform"
+                    href="https://open.spotify.com/episode/5DliZiiKzd4xsGKbTFdROQ?si=c90242feb91d4708" rel="noopener"
+                    target="_blank" title="Listen on Spotify">
+                    <span class="material-symbols-outlined text-2xl font-bold"
+                      style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                  </a>
+                </div>
+                <span
+                  class="absolute top-3 left-3 bg-white text-primary font-extrabold px-2.5 py-0.5 rounded-full text-[11px] border border-primary shadow-[2px_2px_0px_0px_#111] flex items-center gap-1">
+                  <span class="material-symbols-outlined text-xs font-bold">podcasts</span> Spotify
+                </span>
+              </div>
+              <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                <div>
+                  <h3
+                    class="font-headline-sm text-primary group-hover:text-amber-600 transition-colors font-extrabold text-sm sm:text-base leading-snug line-clamp-2"
+                    title="BF wants To Sell My Ovaries For Money: The Truth About My Toxic Ex | kissey podcast | Dishank timble">
+                    BF Wants To Sell My Ovaries For Money: Toxic Ex Truth
+                  </h3>
+                </div>
+                <div class="pt-3 border-t-2 border-dashed border-outline-variant">
+                  <a class="text-primary font-label-md flex items-center justify-center gap-1.5 hover:translate-y-[-2px] transition-all font-bold bg-white hover:bg-yellow-50 px-3 py-2 rounded-xl border border-primary shadow-[2px_2px_0px_0px_#111] w-full text-xs"
+                    href="https://open.spotify.com/episode/5DliZiiKzd4xsGKbTFdROQ?si=c90242feb91d4708" rel="noopener"
+                    target="_blank">
+                    <span>Listen on Spotify</span>
+                    <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Spotify Card 3 -->
+            <div
+              class="episode-card bg-white rounded-2xl overflow-hidden border-2 border-primary shadow-[5px_5px_0px_0px_#111] hover:translate-y-[-4px] hover:shadow-[8px_8px_0px_0px_#111] transition-all duration-300 flex flex-col group"
+              data-category="spotify">
+              <div class="relative aspect-[16/9] overflow-hidden border-b-2 border-primary bg-primary/5">
+                <img alt="How to Survive a Break Up"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015be194e38ce2e6b63dee4727e23"
+                  loading="lazy" />
+                <div
+                  class="absolute inset-0 bg-primary/25 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <a class="w-12 h-12 rounded-full bg-primary-container text-primary border-2 border-primary shadow-[2px_2px_0px_0px_#111] flex items-center justify-center hover:scale-110 transition-transform"
+                    href="https://open.spotify.com/episode/1qOG8afL39JpDEfdmwNf5k?si=e100fafd1cfd4b96" rel="noopener"
+                    target="_blank" title="Listen on Spotify">
+                    <span class="material-symbols-outlined text-2xl font-bold"
+                      style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                  </a>
+                </div>
+                <span
+                  class="absolute top-3 left-3 bg-white text-primary font-extrabold px-2.5 py-0.5 rounded-full text-[11px] border border-primary shadow-[2px_2px_0px_0px_#111] flex items-center gap-1">
+                  <span class="material-symbols-outlined text-xs font-bold">podcasts</span> Spotify
+                </span>
+              </div>
+              <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                <div>
+                  <h3
+                    class="font-headline-sm text-primary group-hover:text-amber-600 transition-colors font-extrabold text-sm sm:text-base leading-snug line-clamp-2"
+                    title="How to Survive a Break Up, and Break toxic family cycle | Ft. Nimai Mehta">
+                    How to Survive a Break Up &amp; Break Toxic Family Cycle
+                  </h3>
+                </div>
+                <div class="pt-3 border-t-2 border-dashed border-outline-variant">
+                  <a class="text-primary font-label-md flex items-center justify-center gap-1.5 hover:translate-y-[-2px] transition-all font-bold bg-white hover:bg-yellow-50 px-3 py-2 rounded-xl border border-primary shadow-[2px_2px_0px_0px_#111] w-full text-xs"
+                    href="https://open.spotify.com/episode/1qOG8afL39JpDEfdmwNf5k?si=e100fafd1cfd4b96" rel="noopener"
+                    target="_blank">
+                    <span>Listen on Spotify</span>
+                    <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Spotify Card 4 -->
+            <div
+              class="episode-card bg-white rounded-2xl overflow-hidden border-2 border-primary shadow-[5px_5px_0px_0px_#111] hover:translate-y-[-4px] hover:shadow-[8px_8px_0px_0px_#111] transition-all duration-300 flex flex-col group"
+              data-category="spotify">
+              <div class="relative aspect-[16/9] overflow-hidden border-b-2 border-primary bg-primary/5">
+                <img alt="KALKI: HOW DO WE DECODE HIS SECRETS?"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be2aa917563a3f68e804d1966f"
+                  loading="lazy" />
+                <div
+                  class="absolute inset-0 bg-primary/25 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <a class="w-12 h-12 rounded-full bg-primary-container text-primary border-2 border-primary shadow-[2px_2px_0px_0px_#111] flex items-center justify-center hover:scale-110 transition-transform"
+                    href="https://open.spotify.com/episode/100meLXM8U5bguev1HSPu5?si=abab9c7c54994e2d" rel="noopener"
+                    target="_blank" title="Listen on Spotify">
+                    <span class="material-symbols-outlined text-2xl font-bold"
+                      style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                  </a>
+                </div>
+                <span
+                  class="absolute top-3 left-3 bg-white text-primary font-extrabold px-2.5 py-0.5 rounded-full text-[11px] border border-primary shadow-[2px_2px_0px_0px_#111] flex items-center gap-1">
+                  <span class="material-symbols-outlined text-xs font-bold">podcasts</span> Spotify
+                </span>
+              </div>
+              <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                <div>
+                  <h3
+                    class="font-headline-sm text-primary group-hover:text-amber-600 transition-colors font-extrabold text-sm sm:text-base leading-snug line-clamp-2"
+                    title="KALKI: HOW DO WE DECODE HIS SECRETS? | Parth Sir Reveals the Clues | Kissey Podcast LIVE">
+                    KALKI: HOW DO WE DECODE HIS SECRETS? Parth Sir Reveals
+                  </h3>
+                </div>
+                <div class="pt-3 border-t-2 border-dashed border-outline-variant">
+                  <a class="text-primary font-label-md flex items-center justify-center gap-1.5 hover:translate-y-[-2px] transition-all font-bold bg-white hover:bg-yellow-50 px-3 py-2 rounded-xl border border-primary shadow-[2px_2px_0px_0px_#111] w-full text-xs"
+                    href="https://open.spotify.com/episode/100meLXM8U5bguev1HSPu5?si=abab9c7c54994e2d" rel="noopener"
+                    target="_blank">
+                    <span>Listen on Spotify</span>
+                    <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        function filterTalks(category, btn) {
+          document.querySelectorAll('#talks-filter .filter-tab').forEach(el => {
+            el.classList.remove('bg-primary-container', 'shadow-[2px_2px_0px_0px_#111]', 'text-primary');
+            el.classList.add('bg-white', 'text-on-surface-variant');
+          });
+          btn.classList.add('bg-primary-container', 'shadow-[2px_2px_0px_0px_#111]', 'text-primary');
+          btn.classList.remove('bg-white', 'text-on-surface-variant');
+
+          document.querySelectorAll('#episodes-grid .episode-card').forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        }
+      </script>
+      <!-- Contact Us Section -->
+      <section class="py-space-xl px-gutter bg-background border-t-2 border-primary" id="contact">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+          <div class="lg:col-span-5 space-y-space-md">
+            <span
+              class="font-label-sm uppercase font-extrabold bg-primary-container px-3 py-1 rounded-full border border-primary text-primary tracking-widest inline-block">Get
+              in Touch</span>
+            <h2 class="font-headline-lg text-4xl text-primary font-black">Let's Connect &amp; Collaborate</h2>
+            <p class="font-body-md text-on-surface-variant font-medium text-base">
+              Have an episode suggestion, want to be a guest, or just want to share feedback about the show? Drop us a
+              line.
+            </p>
+            <div class="space-y-space-md pt-space-md">
+              <a class="flex items-center gap-space-md bg-white p-4 rounded-2xl border-2 border-primary shadow-[3px_3px_0px_0px_#111] hover:translate-y-[-2px] hover:shadow-[5px_5px_0px_0px_#111] transition-all group"
+                href="https://instagram.com/kissseyy" rel="noopener" target="_blank">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-primary border-2 border-primary font-bold group-hover:scale-105 transition-transform">
+                  <span class="material-symbols-outlined">photo_camera</span>
+                </div>
+                <div>
+                  <span class="font-label-sm text-on-surface-variant uppercase font-bold">Instagram</span>
+                  <p class="font-body-md text-primary font-extrabold">@kissseyy</p>
+                </div>
+              </a>
+              <a class="flex items-center gap-space-md bg-white p-4 rounded-2xl border-2 border-primary shadow-[3px_3px_0px_0px_#111] hover:translate-y-[-2px] hover:shadow-[5px_5px_0px_0px_#111] transition-all group"
+                href="https://www.youtube.com/@Kisssey" rel="noopener" target="_blank">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-primary border-2 border-primary font-bold group-hover:scale-105 transition-transform">
+                  <span class="material-symbols-outlined">smart_display</span>
+                </div>
+                <div>
+                  <span class="font-label-sm text-on-surface-variant uppercase font-bold">YouTube</span>
+                  <p class="font-body-md text-primary font-extrabold">@Kisssey</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-7 bg-white p-space-xl rounded-3xl border-3 border-primary shadow-[8px_8px_0px_0px_#111]">
+            <!-- TODO: connect form to a backend or Formspree -->
+            <form class="space-y-space-md"
+              onsubmit="event.preventDefault(); alert('Thank you for your message! We will get back to you shortly.');">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                <div class="space-y-space-xs">
+                  <label class="font-label-sm text-on-surface uppercase font-extrabold">Your Name</label>
+                  <input
+                    class="w-full bg-white text-primary px-space-md py-space-sm rounded-xl border-2 border-primary focus:outline-none focus:ring-2 focus:ring-primary-container font-medium"
+                    placeholder="Jane Doe" required="" type="text" />
+                </div>
+                <div class="space-y-space-xs">
+                  <label class="font-label-sm text-on-surface uppercase font-extrabold">Email Address</label>
+                  <input
+                    class="w-full bg-white text-primary px-space-md py-space-sm rounded-xl border-2 border-primary focus:outline-none focus:ring-2 focus:ring-primary-container font-medium"
+                    placeholder="jane@example.com" required="" type="email" />
+                </div>
+              </div>
+              <div class="space-y-space-xs">
+                <label class="font-label-sm text-on-surface uppercase font-extrabold">Subject</label>
+                <input
+                  class="w-full bg-white text-primary px-space-md py-space-sm rounded-xl border-2 border-primary focus:outline-none focus:ring-2 focus:ring-primary-container font-medium"
+                  placeholder="Episode Suggestion / Collaboration" required="" type="text" />
+              </div>
+              <div class="space-y-space-xs">
+                <label class="font-label-sm text-on-surface uppercase font-extrabold">Message</label>
+                <textarea
+                  class="w-full bg-white text-primary px-space-md py-space-sm rounded-xl border-2 border-primary focus:outline-none focus:ring-2 focus:ring-primary-container font-medium"
+                  placeholder="Write your message here..." required="" rows="4"></textarea>
+              </div>
+              <button
+                class="w-full bg-primary-container text-primary font-label-md py-space-md rounded-xl border-2 border-primary shadow-[4px_4px_0px_0px_#111] hover:translate-y-[-2px] transition-all font-black uppercase tracking-wider text-base"
+                type="submit">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Social Media & Newsletter Footer CTA -->
+      <section class="py-space-xl px-gutter bg-white border-t-2 border-primary relative overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center space-y-space-lg relative z-10">
+          <span
+            class="font-label-sm uppercase font-extrabold bg-primary-container px-3 py-1 rounded-full border border-primary text-primary tracking-widest inline-block">Join
+            &amp; Subscribe</span>
+          <h2 class="font-headline-lg text-4xl text-primary font-black max-w-2xl mx-auto">Join 148K+ listeners and
+            viewers who follow Kissey.</h2>
+          <p class="font-body-md text-on-surface-variant font-medium max-w-xl mx-auto text-base">
+            Never miss a drop. Join individuals across the world discovering the unique 'kissey' in every human.
+          </p>
+          <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-space-sm"
+            onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+            <input
+              class="flex-grow bg-white text-primary px-space-md py-space-sm rounded-xl border-2 border-primary focus:outline-none focus:ring-2 focus:ring-primary-container font-medium"
+              placeholder="Enter your email address" required="" type="email" />
+            <button
+              class="bg-primary-container text-primary font-label-md px-space-xl py-space-sm rounded-xl border-2 border-primary shadow-[4px_4px_0px_0px_#111] hover:translate-y-[-2px] font-black whitespace-nowrap"
+              type="submit">
+              Subscribe
+            </button>
+          </form>
+          <!-- Social Links in order: radio (Spotify), mic (Spotify), smart_display (YouTube), photo_camera (Instagram), share (YouTube) -->
+          <div class="flex items-center justify-center gap-space-lg pt-space-lg flex-wrap">
+
+            <a class="w-12 h-12 rounded-full bg-white border-2 border-primary shadow-[3px_3px_0px_0px_#111] flex items-center justify-center text-primary hover:bg-primary-container transition-all hover:translate-y-[-2px]"
+              href="https://open.spotify.com/show/1qIZ5hwxWoQKYJMnyuFFyb" rel="noopener" target="_blank">
+              <span class="material-symbols-outlined font-bold">mic</span>
+            </a>
+            <a class="w-12 h-12 rounded-full bg-white border-2 border-primary shadow-[3px_3px_0px_0px_#111] flex items-center justify-center text-primary hover:bg-primary-container transition-all hover:translate-y-[-2px]"
+              href="https://www.youtube.com/@Kisssey" rel="noopener" target="_blank">
+              <span class="material-symbols-outlined font-bold">smart_display</span>
+            </a>
+            <a class="w-12 h-12 rounded-full bg-white border-2 border-primary shadow-[3px_3px_0px_0px_#111] flex items-center justify-center text-primary hover:bg-primary-container transition-all hover:translate-y-[-2px]"
+              href="https://instagram.com/kissseyy" rel="noopener" target="_blank">
+              <span class="material-symbols-outlined font-bold">photo_camera</span>
+            </a>
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="w-full bg-surface-container-low py-space-xl border-t-2 border-primary">
+    <div
+      class="max-w-7xl mx-auto px-gutter flex flex-col sm:flex-row items-center justify-between gap-4 text-on-surface-variant font-bold text-body-sm text-center sm:text-left">
+      <div class="flex items-center gap-2.5">
+        <img src="Assets/kissey.jpg" alt="Kissey Logo"
+          class="w-8 h-8 rounded-lg object-cover border-2 border-primary shadow-[2px_2px_0px_0px_#111]" />
+        <span class="font-headline-sm font-black text-primary text-lg tracking-wider uppercase">Kissey</span>
+      </div>
+      <div>
+        © 2026 Kissey. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Scripts (Mobile Navigation & Episode Filters) -->
+  <script>
+    (function () {
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const drawer = document.getElementById('mobile-drawer');
+      const backdrop = document.getElementById('mobile-drawer-backdrop');
+      const closeBtn = document.getElementById('mobile-drawer-close');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+      const desktopNavLinks = document.querySelectorAll('header nav a[href^="#"]');
+
+      function openDrawer() {
+        if (!drawer || !backdrop) return;
+        drawer.classList.remove('translate-x-full');
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        backdrop.classList.add('opacity-100', 'pointer-events-auto');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeDrawer() {
+        if (!drawer || !backdrop) return;
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        document.body.style.overflow = '';
+      }
+
+      if (menuBtn) menuBtn.addEventListener('click', openDrawer);
+      if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+      if (backdrop) backdrop.addEventListener('click', closeDrawer);
+
+      // Smooth scroll helper with sticky header offset
+      function smoothScrollTo(targetSelector, delay) {
+        if (targetSelector === '#about') {
+          targetSelector = '#what-is-kissey';
+        }
+        setTimeout(function () {
+          const targetEl = document.querySelector(targetSelector);
+          if (targetEl) {
+            const headerOffset = 80;
+            const elementPosition = targetEl.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            window.scrollTo({
+              top: Math.max(0, offsetPosition),
+              behavior: 'smooth'
+            });
+          }
+        }, delay || 0);
+      }
+
+      // Handle URL hash redirect: if URL has #about, redirect to #what-is-kissey
+      function handleAboutRedirect() {
+        if (window.location.hash === '#about') {
+          history.replaceState(null, '', '#what-is-kissey');
+          smoothScrollTo('#what-is-kissey', 80);
+        }
+      }
+      if (window.location.hash === '#about') {
+        handleAboutRedirect();
+      }
+      window.addEventListener('hashchange', handleAboutRedirect);
+
+      // Handle mobile drawer links
+      mobileNavLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          let href = this.getAttribute('href');
+          closeDrawer();
+          if (href && href.startsWith('#')) {
+            e.preventDefault();
+            if (href === '#about') href = '#what-is-kissey';
+            smoothScrollTo(href, 100);
+          }
+        });
+      });
+
+      // Handle desktop navigation links
+      desktopNavLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          let href = this.getAttribute('href');
+          if (href && href.startsWith('#')) {
+            e.preventDefault();
+            if (href === '#about') href = '#what-is-kissey';
+            smoothScrollTo(href, 0);
+          }
+        });
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeDrawer();
+      });
+    })();
+
+    // Filter talks by category
+    function filterTalks(category, btn) {
+      const cards = document.querySelectorAll('#episodes-grid .episode-card');
+      const tabs = document.querySelectorAll('#talks-filter .filter-tab');
+
+      tabs.forEach(function (tab) {
+        tab.className = 'filter-tab px-4 py-2 rounded-full bg-white text-on-surface-variant hover:text-primary font-label-md border-2 border-primary font-extrabold hover:bg-yellow-50 hover:translate-y-[-2px] transition-all text-xs sm:text-sm';
+      });
+      if (btn) {
+        btn.className = 'filter-tab px-4 py-2 rounded-full bg-primary-container text-primary font-label-md border-2 border-primary font-extrabold shadow-[2px_2px_0px_0px_#111] hover:translate-y-[-2px] transition-all text-xs sm:text-sm';
+      }
+
+      cards.forEach(function (card) {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
